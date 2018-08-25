@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserPage } from './user/user';
 
 @IonicPage()
 @Component({
@@ -7,5 +8,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'users.html',
 })
 export class UsersPage {
-name: string;
+
+/**
+ *
+ */
+constructor(private navCtrl: NavController) {
+  
+}
+onLoadUser(name: string){
+  //Note: Pushing the page on the stack and also adding some data
+  this.navCtrl.push(UserPage, {userName: name});
+}
 }
