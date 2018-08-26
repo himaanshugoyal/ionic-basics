@@ -9,18 +9,6 @@ import { ShopPage } from '../shop/shop';
 })
 export class HomePage {
 
-  //Nav Controller is used to manage the stack of pages
-  // Note that this importing from ionic-angular
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  onGoToUsers() {
-    this.navCtrl.push(UsersPage);
-  }
-
-  // onGoToShop() {
-  //   this.navCtrl.push(ShopPage);
-  // }
+ usrPage = UsersPage;
 
 }
