@@ -15,5 +15,12 @@ export class ShopPage {
 
   onBuy(productData: {name: string, quantity: number}) {
       this.navCtrl.push(BuyoutPage, productData);
+
+      //Note: To configure Page Transitions.
+    //   this.navCtrl.push(BuyoutPage, productData, {
+    //     direction: 'back', // default for push is 'forward'
+    //     duration: 2000, // 2 seconds
+    //     easing: 'ease-out'
+    // });
   }
 }
