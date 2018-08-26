@@ -15,8 +15,12 @@ export class HomePage {
 
   }
 
-  onGoToShop() {
-    this.navCtrl.push(ShopPage);
+  onGoToUsers() {
+    this.navCtrl.push(UsersPage);
   }
+
+  // onGoToShop() {
+  //   this.navCtrl.push(ShopPage);
+  // }
 
 }
